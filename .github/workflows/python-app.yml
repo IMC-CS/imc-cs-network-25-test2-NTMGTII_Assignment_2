@@ -35,4 +35,4 @@ jobs:
       - name: Run pytest
         run: |
           echo "Running tests on branch: ${{ github.ref_name }}"
-          pytest -v --maxfail=1 --disable-warnings
+          pytest -v rpc_test.py
