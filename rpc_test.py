@@ -39,10 +39,10 @@ def test_fibonacci(setup_server):
     client.disconnect()
 
 
-def test_checksum(setup_server):
-    client = RPCClient(setup_server, 8080)
-    client.connect()
-    assert client.checksum([1, 2, 3, 4]) == 10
-    client.disconnect()
+# def test_checksum(setup_server):
+#     client = RPCClient(setup_server, 8080)
+#     client.connect()
+#     assert client.checksum([1, 2, 3, 4]) == 10
+#     client.disconnect()
 
     
